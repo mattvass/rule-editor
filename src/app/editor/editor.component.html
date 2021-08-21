@@ -1,0 +1,7 @@
+<pre>{{getRule().name}}</pre>
+<br />
+<div *ngFor="let item of getRule().applicabilityRule.rules">
+    <div *ngForm="let key of getKeys(item)">
+        Key {{key}} 
+    </div>
+</div>
